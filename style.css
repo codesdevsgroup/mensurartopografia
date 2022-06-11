@@ -510,6 +510,11 @@ footer p {
 footer .social-links {
   justify-content: flex-start;
 }
+footer h2 {
+  color: black;
+  text-decoration: none;
+}
+
 
 /* BACK TO TOP */
 #backToTopButton {
@@ -803,6 +808,7 @@ footer .social-links {
     margin-bottom: 0;
   }
 }
+
 /* Formatação rodapé CodesDevs */
 #cd_rodape {
   background-color: black;
