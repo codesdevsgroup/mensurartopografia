@@ -722,7 +722,7 @@ footer h2 {
     grid-area: C;
 
     flex-direction: row;
-    padding: 6rem;
+    padding: 6rem 0.5rem;
     gap: 0;
   }
 
