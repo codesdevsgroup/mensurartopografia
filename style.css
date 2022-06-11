@@ -200,11 +200,14 @@ nav .close-menu {
   position: fixed;
 }
 
+
 nav .wrapper img {
   width: 12rem;
   display: block;
   margin-inline: auto;
 }
+
+
 
 /*=== MENU EXPENDED=========================*/
 body.menu-expanded {
@@ -395,6 +398,7 @@ body.menu-expanded button path {
 
 #services .card h3 {
   margin-block: 1.6rem;
+  text-align: center;
 }
 
 /*=== About =========================*/
