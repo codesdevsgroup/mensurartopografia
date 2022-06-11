@@ -470,6 +470,11 @@ body.menu-expanded button path {
   gap: 0.8rem;
 }
 
+#contact .map{
+  display: flex;
+  width: -20rem;
+  }
+
 /*=== Footer =========================*/
 
 footer {
