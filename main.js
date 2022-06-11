@@ -3,6 +3,7 @@ window.addEventListener('scroll', onScroll)
 onScroll()
 function onScroll() {
   showNavOnScroll()
+  showLogo()
   showBackToTopButtonOnScroll()
   activateMenuAtCurrentSection(home)
   activateMenuAtCurrentSection(services)
@@ -54,6 +55,16 @@ function showNavOnScroll() {
     navegacao.classList.add("scroll")
   } else {
     navegacao.classList.remove("scroll")
+  }
+}
+
+var img = document.querySelector("#logo-nav")
+function showLogo() {
+  if (window.scrollY > 0) {
+    img.setAttribute('src', './assets/variacao-logo-branco-sem-fundo.png')
+  } else {
+    img = document.querySelector("#logo-nav")
+    img.setAttribute('src', './assets/variacao-logo-sem-fundo.png')
   }
 }
 
