@@ -383,12 +383,13 @@ body.menu-expanded button path {
 #services .cards {
   display: flex;
   flex-direction: column;
-  gap: 3.2rem;
+  gap: 5rem;
 }
 
 #services .card {
-  padding: 2.4rem;
-  text-align: left;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+  text-align: center;
 
   background: white;
 
@@ -396,10 +397,19 @@ body.menu-expanded button path {
   border-radius: 0.6rem;
 }
 
+#services .card img {
+  width: 5rem;
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 #services .card h3 {
   margin-block: 1.6rem;
   text-align: center;
 }
+
 
 /*=== About =========================*/
 #about {
@@ -414,6 +424,10 @@ body.menu-expanded button path {
 #about .content p {
   margin-top: 2.4rem;
   margin-bottom: 6rem;
+}
+
+#about img {
+  border-radius: 1.5rem;
 }
 
 /*=== Contact =========================*/
