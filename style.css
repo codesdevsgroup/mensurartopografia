@@ -765,11 +765,14 @@ footer .social-links {
 #cd_rodape {
   background-color: black;
   text-align: center;
+  color: white;
+  text-decoration: none;
 }
 #cd_rodape a {
   color: white;
   text-decoration: none;
 }
+
 #cd_rodape a:hover {
-  color: #ffc107;
+  color: blue;
 }
