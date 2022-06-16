@@ -1,8 +1,11 @@
 window.addEventListener('scroll', onScroll)
+var img = document.querySelector("#logo-nav")
+img.setAttribute('src', './assets/variacao-logo-sem-fundo.png')
 
 onScroll()
 function onScroll() {
   showNavOnScroll()
+  showLogo()
   showBackToTopButtonOnScroll()
   activateMenuAtCurrentSection(home)
   activateMenuAtCurrentSection(services)
@@ -57,6 +60,16 @@ function showNavOnScroll() {
   }
 }
 
+img = document.querySelector("#logo-nav")
+function showLogo() {
+  if (window.scrollY > 0) {
+    img.setAttribute('src', './assets/variacao-logo-branco-sem-fundo.png')
+  } else {
+    img = document.querySelector("#logo-nav")
+    img.setAttribute('src', './assets/variacao-logo-sem-fundo.png')
+  }
+}
+
 function showBackToTopButtonOnScroll() { 
   if (scrollY > 550) {
     backToTopButton.classList.add('show')
@@ -66,11 +79,15 @@ function showBackToTopButtonOnScroll() {
 }
 
 function openMenu() {
+  img = document.querySelector("#logo-nav")
   document.body.classList.add('menu-expanded')
+  img.setAttribute('src', './assets/variacao-logo-branco-sem-fundo.png')
 }
 
 function closeMenu() {
+  img = document.querySelector("#logo-nav")
   document.body.classList.remove('menu-expanded')
+  img.setAttribute('src', './assets/variacao-logo-sem-fundo.png')
 }
 
 ScrollReveal({
