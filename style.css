@@ -6,22 +6,15 @@
   box-sizing: border-box;
 }
 
-/*
-  secondary-color - Azul escuro: hsl(232, 64%, 15%)
-  primary-color - Azul: hsl(233, 82%, 34%)
-  Azul cinza escuro: hsl(235, 14%, 47%)
-  Azul cinza claro: hsl(233, 12%, 72%)
-  Cor de fundo: hsl(249, 21%, 83%)
-  Branco azulado: hsl(180, 100%, 97%)
-  branco
-*/
 :root {
   --primary-color: hsl(233, 82%, 34%);
   --secondary-color: hsl(232, 64%, 15%);
 
-  --blue-smoth-grey: hsl(231, 20%, 82%);
+  --blue-smoth-grey: hsl(225, 67%, 96%);
+  /*--blue-smoth-grey: hsl(231, 20%, 82%);*/
+  --backgroun-color: hsl(0, 0%, 100%);
+  /*--backgroun-color: hsl(249, 21%, 83%);*/
   --blue-dark-gray: hsl(233, 10%, 49%);
-  --backgroun-color: hsl(249, 21%, 83%);
   --white: hsl(180, 100%, 97%);
 
   font-size: 62.5%; /* 1rem = 10 pix */
@@ -345,7 +338,7 @@ body.menu-expanded button path {
 }
 
 #home img {
-  width: 26.4rem;
+  width: 20rem;
   display: block;
   margin-inline: auto;
   object-position: 0 2rem;
@@ -367,19 +360,19 @@ body.menu-expanded button path {
 }
 
 #home .stat h3 {
-  font-size: 4.8rem;
+  font-size: 2.4rem;
+  font-weight: 600;
   color: var(--secondary-color);
   line-height: 130%;
-
-  margin-bottom: 0.4rem;
+  margin: 0 3rem;
 }
 
-#home .stat p {
-  margin: 0;
-  color: var(--primary-color);
-  font-size: 1.6rem;
-  line-height: 150%;
-}
+/*#home .stat p {
+margin: 0;
+color: var(--primary-color);
+font-size: 1.6rem;
+line-height: 150%;
+}*/
 
 /*=== Services =========================*/
 
@@ -745,10 +738,11 @@ footer h2 {
   }
 
   #home img {
-    width: 42rem;
+    width: 25rem;
+    margin-right: 5rem;
   }
 
-  /*=== HOME =========================*/
+  /*=== Services =========================*/
   #services h2 {
     width: 47rem;
     margin-inline: auto;
