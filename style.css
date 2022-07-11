@@ -470,7 +470,6 @@ line-height: 150%;
 
 #contact .map{
   display: flex;
-  width: -20rem;
   }
 
 /*=== Footer =========================*/
@@ -805,6 +804,9 @@ footer h2 {
 
   footer p {
     margin-bottom: 0;
+  }
+  .sobrenos{
+    margin-top: 50px;
   }
 }
 
